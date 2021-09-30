@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <header>
+        <center>
+        <h1><u>Student Registration Form</u></h1>
+        </center>
+        <main>
+            <form action="studentRegistration.php">
+                <fieldset>
+                <legend>Personal Information:</legend>
+                <b>Name:</b><input placeholder="First Name"> <input placeholder="Last Name">
+            <br><br>
+            <b>Father's Name:</b> <input><br><br>
+            <b>Mother's Name:</b> <input><br><br>
+            <b>Guardian's Name:</b><input> <input placeholder="Relation"><br><br>
+            <b>Gender:</b> <label for ="male"><input type="radio" id="male" name="gender">Male</label>
+            <label for ="female"><input type="radio" id="female" name="gender">Female</label>
+            <label for ="transgen"><input type="radio" id="transgen" name="gender">Transgender</label>
+            <label for ="no"><input type="radio" id="no" name="gender">Prefer not to answer</label><br><br>
+            <b>Date of Birth:</b> <input type="date"><br><br>
+            <b>Email Address:</b> <input type="email"><br><br>
+            <b>Contact No:</b> <input type="number"><br><br>
+            </fieldset>
+            <fieldset>
+            <legend>Educational Details:</legend>
+            <b>University/College:</b> <input placeholder="Name"><input placeholder="State/Country"><br><br> 
+            <b>Majoring in:</b> <input><br><br>
+            <b>Year of graduation/post graduation:</b> <select name="year" id="year">
+                <option>Select</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                
+            </select>
+            <table border="1">
+                <thead>
+                    <caption>Marks Details</caption><tr>
+                    <th>Degree(Last Semester,12th,10th)</th>
+                    <th>Marks Obtained(%,pointer)</th>
+                    <th>Max Marks</th>
+                    <th>Year</th>
+                </tr></thead>
+                <tbody><tr>
+                    <td><input size="30px"></td><td><input size="15px"><select name="marks" id="marks">
+                        <option>%</option>
+                        <option>pointer</option></td><td><input></td><td><input></td>
+                </tr>
+                <tr>
+                    <td><input size="30px"></td><td><input size="15px"><select name="marks" id="marks">
+                        <option>%</option>
+                        <option>pointer</option></td><td><input></td><td><input></td>
+                </tr>
+                <tr>
+                    <td><input size="30px"></td><td><input size="15px"><select name="marks" id="marks">
+                        <option>%</option>
+                        <option>pointer</option></td><td><input></td><td><input></td>
+                </tr>
+                
+                </tbody>
+            </table>
+            </fieldset>
+            <fieldset>
+                <legend>Course Details:</legend>
+                    <b>Courses to enrol in(can be multiple):</b> <select multiple name="sub" id="course">
+                            <option>Choose</option>
+                            <option>Data structures and Algorithms</option>
+                            <option>Web Development</option>
+                            <option>Android Development</option>
+                            <option>Cyber Security</option>
+                            <option>Placement Series</option>
+                            <option>Content Writing</option>
+                            <option>UI/UX</option>
+                            <option>AI/ML</option>
+                            <option>Robotics</option>
+                        </select><br><br>
+                        <b>Suitable Batch:</b> <label for="odd"><input type="radio" value="mon" name="days" id="odd">7pm-9pm(IST) on MON,WED and FRI</label>
+                        <label for="even"><input type="radio" value="tue" name="days" id="even">7pm-9pm(IST) on TUE,THU and SAT</label>
+                        <br><br>
+                        <b>Why XYZ?</b>    <textarea placeholder="Preferred short and precise"></textarea><br>
+                        <b><br>Why we should select you?</b> <textarea name="explain"></textarea>
+                        <br>
+                    </fieldset>
+                    <fieldset><legend>Attach Documents:</legend>
+                        <b>Recentx image:</b> <input type="file"><br><br>
+                        <b>University/College Proof:</b> <input type="file">
+                    </fieldset>
+                    <fieldset><legend>Undertaking:</legend>
+                    <input type="checkbox"><b>I have read all the terms and conditions, and I hereby agree with all those by submitting this form and will abide with all the protocols.
+                    </b></fieldset>
+                    <br>
+                    <center><button type="submit">Submit</button></center>>
+                    </form>
+                </form>
+        </main>
+    </header>
+</body>
+</html>
