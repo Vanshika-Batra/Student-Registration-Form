@@ -1,0 +1,42 @@
+.compform{
+        background-image: url("https://ual-media-res.cloudinary.com/image/fetch/c_fill,f_auto,g_auto,q_auto,w_600,ar_1:1/https://www.arts.ac.uk/__data/assets/image/0028/260974/Creative_Coding_Online_Short_Course_Damien_Borowik_003.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin:0%;
+        background-size:cover;
+    }
+    h1{
+        text-align:center;
+        color:whitesmoke;
+       font: url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+        font-size: 60px;
+    }
+    .form{
+        margin:auto;
+       padding:10px;
+       color:white;
+       width:fit-content;
+       font-size: 30px;
+       background-color:rgba(255, 253, 253, 0.2);
+       font-weight: bold;
+       border-radius: 0px,0px,20px,20px;
+    }
+    
+    #submission{
+        border: 3px solid white;
+        margin-left:950px;
+        width:100px;
+        height:50px;
+        font-size: 0.5cm;
+        font-weight:bolder;
+        border-radius:8px;
+        color: white;
+        background:linear-gradient(120deg, rgb(100, 88, 96),#8f046c,rgb(230, 206, 206))
+    }
+    #table{
+        border: 1px double white;
+    }
+    .inner{
+        text-align: center;
+    }
+
