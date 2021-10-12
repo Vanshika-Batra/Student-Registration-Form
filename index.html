@@ -9,11 +9,10 @@
 </head>
 <body>
     <header>
-        <center>
-        <h1><u>Student Registration Form</u></h1>
-        </center>
+        <div class="compform">
+        <h1 id="heading"><u>Student Registration Form</u></h1>
         <main>
-            <form action="studentRegistration.php">
+            <form action="studentRegistration.php" class="form">
                 <fieldset>
                 <legend>Personal Information:</legend>
                 <b>Name:</b><input placeholder="First Name"> <input placeholder="Last Name">
@@ -42,7 +41,7 @@
                 <option>2025</option>
                 
             </select>
-            <table border="1">
+            <table id="table">
                 <thead>
                     <caption>Marks Details</caption><tr>
                     <th>Degree(Last Semester,12th,10th)</th>
@@ -50,7 +49,7 @@
                     <th>Max Marks</th>
                     <th>Year</th>
                 </tr></thead>
-                <tbody><tr>
+                <tbody class="inner"><tr>
                     <td><input size="30px"></td><td><input size="15px"><select name="marks" id="marks">
                         <option>%</option>
                         <option>pointer</option></td><td><input></td><td><input></td>
@@ -71,7 +70,7 @@
             </fieldset>
             <fieldset>
                 <legend>Course Details:</legend>
-                    <b>Courses to enrol in(can be multiple):</b> <select multiple name="sub" id="course">
+                    <b>Courses to enroll in(can be multiple):</b> <select multiple name="sub" id="course">
                             <option>Choose</option>
                             <option>Data structures and Algorithms</option>
                             <option>Web Development</option>
@@ -91,17 +90,17 @@
                         <br>
                     </fieldset>
                     <fieldset><legend>Attach Documents:</legend>
-                        <b>Recentx image:</b> <input type="file"><br><br>
+                        <b>Recent image:</b> <input type="file"><br><br>
                         <b>University/College Proof:</b> <input type="file">
                     </fieldset>
                     <fieldset><legend>Undertaking:</legend>
                     <input type="checkbox"><b>I have read all the terms and conditions, and I hereby agree with all those by submitting this form and will abide with all the protocols.
                     </b></fieldset>
                     <br>
-                    <center><button type="submit">Submit</button></center>>
-                    </form>
+                    <button type="submit" id="submission">Submit</button>
                 </form>
         </main>
+        </div>
     </header>
 </body>
 </html>
